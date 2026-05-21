@@ -1,0 +1,14 @@
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\bin\Debug\net10.0\terminal_myFinances.exe
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\bin\Debug\net10.0\terminal_myFinances.deps.json
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\bin\Debug\net10.0\terminal_myFinances.runtimeconfig.json
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\bin\Debug\net10.0\terminal_myFinances.dll
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\bin\Debug\net10.0\terminal_myFinances.pdb
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.AssemblyInfoInputs.cache
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.AssemblyInfo.cs
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.csproj.CoreCompileInputs.cache
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.dll
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\refint\terminal_myFinances.dll
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.pdb
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\terminal_myFinances.genruntimeconfig.cache
+C:\Users\victo\source\repos\terminal_myFinances\terminal_myFinances\obj\Debug\net10.0\ref\terminal_myFinances.dll

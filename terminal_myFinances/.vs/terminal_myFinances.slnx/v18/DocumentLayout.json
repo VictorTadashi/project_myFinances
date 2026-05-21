@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\victo\\source\\repos\\terminal_myFinances\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84C17FEA-C4D4-B730-C2A3-2336AF971E32}|terminal_myFinances\\terminal_myFinances.csproj|c:\\users\\victo\\source\\repos\\terminal_myfinances\\terminal_myfinances\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84C17FEA-C4D4-B730-C2A3-2336AF971E32}|terminal_myFinances\\terminal_myFinances.csproj|solutionrelative:terminal_myfinances\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\source\\repos\\terminal_myFinances\\terminal_myFinances\\Program.cs",
+              "RelativeDocumentMoniker": "terminal_myFinances\\Program.cs",
+              "ToolTip": "C:\\Users\\victo\\source\\repos\\terminal_myFinances\\terminal_myFinances\\Program.cs",
+              "RelativeToolTip": "terminal_myFinances\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T19:21:13.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

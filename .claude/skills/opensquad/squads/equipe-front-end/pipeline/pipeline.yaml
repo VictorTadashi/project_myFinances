@@ -1,0 +1,59 @@
+# Pipeline — EquipeFrontEnd
+# Esteira sequencial: Design (Alessandra) → Validação → Implementação (Victor)
+
+steps:
+
+  - id: design
+    name: "Etapa 1 — Design (Alessandra)"
+    skill: alessandra
+    description: >
+      Alessandra recebe o briefing preenchido pelo usuário e executa as 5 fases
+      do workflow de design: entendimento do negócio, direção visual, layout e
+      componentes, mockups visuais e documento final de design.
+    input:
+      file: pipeline/data/brief-template.md
+      prompt: >
+        Leia o briefing em `pipeline/data/brief-template.md` e execute o
+        workflow completo de design (Fases 1 a 5). Salve o documento final de
+        design em `squads/equipe-front-end/_memory/projects/{project-name}/design/design-spec.md`,
+        onde {project-name} é o nome do projeto em kebab-case extraído do briefing.
+        Salve também os mockups HTML/PNG gerados na mesma pasta `design/`.
+    output:
+      file: squads/equipe-front-end/_memory/projects/{project-name}/design/design-spec.md
+
+  - id: human-validation
+    name: "Etapa 2 — Validação Humana"
+    type: checkpoint
+    description: >
+      Ponto de parada obrigatório. O usuário revisa o design-spec.md gerado por
+      Alessandra e confirma aprovação antes de avançar para a implementação.
+      Se houver ajustes, retornar ao step de design.
+    prompt: >
+      O design foi gerado por Alessandra e salvo em:
+      `squads/equipe-front-end/_memory/projects/{project-name}/design/design-spec.md`
+
+      Por favor revise o documento de design e responda:
+      - "aprovado" para seguir para a implementação com Victor
+      - "ajustes: [descreva as mudanças]" para refinar o design antes de avançar
+
+  - id: implementation
+    name: "Etapa 3 — Implementação (Victor)"
+    skill: victor
+    description: >
+      Victor recebe o documento de design produzido por Alessandra e executa as
+      5 fases de implementação: análise do design, planejamento da estrutura,
+      configuração do projeto, implementação dos componentes e finalização.
+    input:
+      file: squads/equipe-front-end/_memory/projects/{project-name}/design/design-spec.md
+      prompt: >
+        Leia o documento de design em
+        `squads/equipe-front-end/_memory/projects/{project-name}/design/design-spec.md`
+        e execute o workflow completo de implementação (Fases 1 a 5).
+        Salve o projeto em `skills/opensquad/skills/victor/projects/{project-name}/`.
+        Ao finalizar, salve um relatório de status em
+        `squads/equipe-front-end/_memory/projects/{project-name}/implementation/status.md`
+        listando: componentes criados, caminho do projeto, comando para rodar e
+        assets que precisam ser adicionados manualmente.
+    output:
+      dir: skills/opensquad/skills/victor/projects/{project-name}/
+      report: squads/equipe-front-end/_memory/projects/{project-name}/implementation/status.md

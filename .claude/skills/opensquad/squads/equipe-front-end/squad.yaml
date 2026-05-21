@@ -1,0 +1,36 @@
+code: equipe-front-end
+name: EquipeFrontEnd
+description: >
+  Squad de desenvolvimento front-end completo. Recebe um briefing de negócio e
+  executa uma esteira de duas etapas: Alessandra (UX/UI) produz o design completo
+  com sistema de cores, tipografia, layouts e mockups; após validação humana,
+  Victor (React/Next.js) converte o design em um projeto Next.js 15 + TypeScript
+  + Tailwind CSS funcional e pronto para deploy.
+icon: 🎨
+version: "1.0.0"
+performance_mode: alta-performance
+created: 2026-04-02
+
+skills:
+  - alessandra
+  - victor
+  - image-creator
+
+pipeline:
+  steps: pipeline/pipeline.yaml
+
+data:
+  - pipeline/data/brief-template.md
+
+output:
+  dir: squads/equipe-front-end/_memory/projects
+  structure: |
+    _memory/
+      projects/
+        {project-name}/
+          design/
+            design-spec.md          # documento completo de design (Alessandra)
+            hero-mockup-desktop.png # mockup visual (opcional)
+            hero-mockup-mobile.png
+          implementation/
+            status.md               # relatório final (Victor)
