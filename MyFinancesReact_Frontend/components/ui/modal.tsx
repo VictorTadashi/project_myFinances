@@ -36,17 +36,17 @@ export function Modal({ open, onClose, title, children, className }: ModalProps)
     >
       <div
         className={cn(
-          'bg-white rounded-2xl shadow-xl w-full max-w-md p-8 animate-scale-in',
+          'bg-white dark:bg-slate-900 rounded-2xl shadow-xl w-full max-w-md p-8 animate-scale-in',
           className
         )}
       >
         <div className="flex items-center justify-between mb-6">
-          <h3 id="modal-title" className="text-xl font-semibold text-slate-900">
+          <h3 id="modal-title" className="text-xl font-semibold text-slate-900 dark:text-slate-100">
             {title}
           </h3>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors duration-150"
+            className="p-1.5 rounded-lg text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-150"
             aria-label="Fechar modal"
           >
             <X className="w-5 h-5" />

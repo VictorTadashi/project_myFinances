@@ -10,9 +10,9 @@ const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
   primary:
     'bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-300 hover:-translate-y-0.5 active:translate-y-0',
   secondary:
-    'border border-indigo-600 text-indigo-600 bg-transparent hover:bg-indigo-50 focus:ring-indigo-300',
+    'border border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 bg-transparent hover:bg-indigo-50 dark:hover:bg-indigo-900/30 focus:ring-indigo-300',
   ghost:
-    'text-slate-600 bg-transparent hover:bg-slate-100 focus:ring-slate-300',
+    'text-slate-600 dark:text-slate-400 bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 focus:ring-slate-300',
   destructive:
     'bg-red-500 text-white hover:bg-red-600 focus:ring-red-300 hover:-translate-y-0.5 active:translate-y-0',
 }
@@ -28,7 +28,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     <button
       ref={ref}
       className={cn(
-        'inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-40 disabled:cursor-not-allowed',
+        'inline-flex items-center justify-center gap-2 font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-slate-900 disabled:opacity-40 disabled:cursor-not-allowed',
         variantClasses[variant],
         sizeClasses[size],
         className

@@ -254,3 +254,4 @@ C:\Users\victo\source\repos\MyFinances\MyFinancesAPI_backend\MyFinancesAPI\obj\D
 C:\Users\victo\source\repos\MyFinances\MyFinancesAPI_backend\MyFinancesAPI\obj\Debug\net8.0\MyFinancesAPI.pdb
 C:\Users\victo\source\repos\MyFinances\MyFinancesAPI_backend\MyFinancesAPI\obj\Debug\net8.0\MyFinancesAPI.genruntimeconfig.cache
 C:\Users\victo\source\repos\MyFinances\MyFinancesAPI_backend\MyFinancesAPI\obj\Debug\net8.0\ref\MyFinancesAPI.dll
+C:\Users\victo\source\repos\MyFinances\MyFinancesAPI_backend\MyFinancesAPI\obj\Debug\net8.0\MyFinancesAPI.sourcelink.json

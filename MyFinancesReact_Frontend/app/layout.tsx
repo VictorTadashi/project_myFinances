@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { Sidebar } from '@/components/layout/sidebar'
+import { ThemeProvider } from '@/components/providers/theme-provider'
+import { ThemeToggle } from '@/components/ui/theme-toggle'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,13 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={inter.variable} suppressHydrationWarning>
-      <body className="bg-slate-50">
-        <div className="flex min-h-screen">
-          <Sidebar />
-          <main className="flex-1 md:ml-60">
-            {children}
-          </main>
-        </div>
+      <body className="bg-slate-50 dark:bg-slate-950">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+          <ThemeToggle />
+        </ThemeProvider>
       </body>
     </html>
   )

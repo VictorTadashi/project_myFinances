@@ -82,7 +82,7 @@ export default function HomePage() {
         />
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 rounded-xl bg-indigo-50/60 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/50 shadow-lg p-6">
         <DespesasGrid
           despesas={despesas}
           isLoading={isLoadingDespesas}

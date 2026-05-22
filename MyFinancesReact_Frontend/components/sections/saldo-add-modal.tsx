@@ -35,9 +35,9 @@ export function SaldoAddModal({ open, onClose, onAdd, currentSaldo }: SaldoAddMo
   return (
     <Modal open={open} onClose={handleClose} title="Adicionar ao Saldo">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        <div className="bg-emerald-50 rounded-lg px-4 py-3">
-          <p className="text-xs text-slate-500">Saldo atual</p>
-          <p className="text-lg font-semibold text-emerald-600">
+        <div className="bg-emerald-50 dark:bg-emerald-900/30 rounded-lg px-4 py-3">
+          <p className="text-xs text-slate-500 dark:text-slate-400">Saldo atual</p>
+          <p className="text-lg font-semibold text-emerald-600 dark:text-emerald-400">
             {formatCurrency(currentSaldo)}
           </p>
         </div>

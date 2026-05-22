@@ -59,3 +59,16 @@ export async function deleteDespesa(id: number): Promise<void> {
     throw new Error(data?.mensagem ?? 'Erro ao excluir despesa')
   }
 }
+
+export async function loginUsuario(email: string, senha: string): Promise<{ id: number; nome: string; email: string }> {
+  const res = await fetch(`${BASE_URL}/api/Usuarios/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, senha }),
+  })
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}))
+    throw new Error(data?.mensagem ?? 'Email ou senha inválidos')
+  }
+  return res.json()
+}

@@ -27,6 +27,15 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.EnsureCreated();
+    db.Database.ExecuteSqlRaw("""
+        CREATE TABLE IF NOT EXISTS Usuarios (
+            Id        INTEGER PRIMARY KEY AUTOINCREMENT,
+            Nome      TEXT    NOT NULL DEFAULT '',
+            Email     TEXT    NOT NULL DEFAULT '',
+            SenhaHash TEXT    NOT NULL DEFAULT '',
+            CriadoEm TEXT    NOT NULL DEFAULT (datetime('now'))
+        )
+    """);
 }
 
 app.UseSwagger();

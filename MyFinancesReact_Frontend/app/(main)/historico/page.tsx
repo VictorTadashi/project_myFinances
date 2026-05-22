@@ -43,10 +43,10 @@ export default function HistoricoPage() {
   }
 
   return (
-    <div className="p-6 md:p-10 max-w-5xl">
-      <div className="mb-10 animate-fade-up">
-        <h2 className="text-2xl font-bold text-slate-900">Histórico</h2>
-        <p className="text-slate-500 mt-1.5">
+    <div className="p-6 md:p-10 max-w-5xl ">
+      <div className="mb-10 animate-fade-up rounded-xl p-6 bg-white dark:bg-slate-900 shadow-lg">
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Histórico</h2>
+        <p className="text-slate-500 dark:text-slate-400 mt-1.5">
           Acompanhe todas as entradas de saldo e despesas cadastradas ao longo do tempo.
         </p>
       </div>
