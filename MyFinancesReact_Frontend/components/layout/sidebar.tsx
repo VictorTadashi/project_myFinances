@@ -2,8 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { BarChart2, History, Home, LayoutDashboard, LogOut } from 'lucide-react'
+import { History, Home, LayoutDashboard, LogOut } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { LogoImage } from '@/components/ui/logo-image'
 
 const navLinks = [
   { href: '/home', label: 'Home', icon: Home },
@@ -18,9 +19,8 @@ export function Sidebar() {
   return (
     <aside className="fixed left-0 top-0 h-screen w-60 bg-white dark:bg-slate-900 border-r border-slate-100 dark:border-slate-700 flex flex-col z-40">
       {/* Logo */}
-      <div className="flex items-center gap-2.5 px-5 py-5 border-b border-slate-100 dark:border-slate-700">
-        <BarChart2 className="w-5 h-5 text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
-        <span className="font-semibold text-slate-900 dark:text-white text-base">MyFinances</span>
+      <div className="flex items-center px-5 py-5 border-b border-slate-100 dark:border-slate-700">
+        <LogoImage variant="auto" width={130} height={36} />
       </div>
 
       {/* Nav links */}

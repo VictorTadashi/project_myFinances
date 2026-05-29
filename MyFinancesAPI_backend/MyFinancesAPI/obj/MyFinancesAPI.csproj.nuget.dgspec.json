@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\source\\repos\\MyFinances\\MyFinancesAPI_backend\\MyFinancesAPI\\MyFinancesAPI.csproj": {}
+    "C:\\Users\\victo\\source\\repos\\MyFinances\\myfinancesapi_backend\\myfinancesapi\\MyFinancesAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\source\\repos\\MyFinances\\MyFinancesAPI_backend\\MyFinancesAPI\\MyFinancesAPI.csproj": {
+    "C:\\Users\\victo\\source\\repos\\MyFinances\\myfinancesapi_backend\\myfinancesapi\\MyFinancesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\source\\repos\\MyFinances\\MyFinancesAPI_backend\\MyFinancesAPI\\MyFinancesAPI.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\source\\repos\\MyFinances\\myfinancesapi_backend\\myfinancesapi\\MyFinancesAPI.csproj",
         "projectName": "MyFinancesAPI",
-        "projectPath": "C:\\Users\\victo\\source\\repos\\MyFinances\\MyFinancesAPI_backend\\MyFinancesAPI\\MyFinancesAPI.csproj",
+        "projectPath": "C:\\Users\\victo\\source\\repos\\MyFinances\\myfinancesapi_backend\\myfinancesapi\\MyFinancesAPI.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\source\\repos\\MyFinances\\MyFinancesAPI_backend\\MyFinancesAPI\\obj\\",
+        "outputPath": "C:\\Users\\victo\\source\\repos\\MyFinances\\myfinancesapi_backend\\myfinancesapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

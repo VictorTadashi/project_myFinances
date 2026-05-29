@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { BarChart2, Check } from 'lucide-react'
+import { Check } from 'lucide-react'
 import { loginUsuario } from '@/lib/api'
+import { LogoImage } from '@/components/ui/logo-image'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -31,21 +32,21 @@ export default function LoginPage() {
   return (
     <div className="flex h-screen">
       {/* Lado esquerdo — branding (40%) */}
-      <div className="hidden md:flex md:w-[40%] bg-gradient-to-br from-indigo-600 to-indigo-900 flex-col justify-between p-10">
-        <div className="flex items-center gap-2.5">
-          <BarChart2 className="w-6 h-6 text-white" />
-          <span className="text-white font-semibold text-lg">MyFinances</span>
-        </div>
+      <div className="hidden md:flex md:w-[40%] bg-gradient-to-br from-indigo-600 to-indigo-900 flex-col items-center justify-between p-10">
+        <div />
 
-        <div>
-          <h1 className="text-3xl font-bold text-white leading-tight">
-            Gerencie suas finanças com simplicidade
+        <div className="flex flex-col items-start gap-6">
+          <h1 className="text-6xl font-bold text-white leading-tight">
+            Gerencie suas{' '}
+            <span className="text-indigo-950">Finanças</span>
+            {' '}com{' '}
+            <span className="text-indigo-950">simplicidade</span>
           </h1>
-          <p className="text-indigo-200 mt-3 text-sm">
+          <p className="text-indigo-200 text-lg">
             Controle seu saldo, registre despesas e acompanhe seu histórico financeiro.
           </p>
 
-          <ul className="mt-8 space-y-3">
+          <ul className="mt-2 space-y-3">
             {[
               'Visualize seu saldo em tempo real',
               'Cadastre e gerencie despesas',
@@ -65,22 +66,22 @@ export default function LoginPage() {
       </div>
 
       {/* Lado direito — formulário (60%) */}
-      <div className="flex-1 flex items-center justify-center bg-white dark:bg-slate-900 px-6">
-        <div className="w-full max-w-sm">
-          {/* Logo mobile */}
-          <div className="flex items-center gap-2 mb-8 md:hidden">
-            <BarChart2 className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-            <span className="font-semibold text-slate-900 dark:text-white">MyFinances</span>
+      <div className="flex-1 flex items-center justify-center bg-slate-50 dark:bg-slate-950 px-6">
+        <div className="w-full max-w-sm bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-xl rounded-2xl px-8 py-10 flex flex-col items-center">
+          <div className="mb-6">
+            <LogoImage variant="auto" width={140} height={40} />
           </div>
 
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
-            Bem-vindo de volta
-          </h2>
-          <p className="text-slate-500 dark:text-slate-400 mt-1.5 text-sm">
-            Entre com suas credenciais para continuar.
-          </p>
+          <div className="w-full text-center mb-2">
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+              Bem-vindo de volta
+            </h2>
+            <p className="text-slate-500 dark:text-slate-400 mt-1.5 text-sm">
+              Entre com suas credenciais para continuar.
+            </p>
+          </div>
 
-          <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+          <form onSubmit={handleSubmit} className="mt-6 space-y-5 w-full">
             <div>
               <label
                 htmlFor="email"
@@ -138,3 +139,4 @@ export default function LoginPage() {
     </div>
   )
 }
+

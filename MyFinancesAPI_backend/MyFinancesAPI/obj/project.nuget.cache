@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ow41BWLh4TE=",
+  "dgSpecHash": "u7el+4hKcrw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\source\\repos\\MyFinances\\MyFinancesAPI_backend\\MyFinancesAPI\\MyFinancesAPI.csproj",
+  "projectFilePath": "C:\\Users\\victo\\source\\repos\\MyFinances\\myfinancesapi_backend\\myfinancesapi\\MyFinancesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
